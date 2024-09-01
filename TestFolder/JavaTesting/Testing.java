@@ -1,16 +1,16 @@
 package JavaTesting;
+
 import java.util.Scanner;
 
 public class Testing {
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.println("Hello there.\nWhat is your name?");
+        System.out.println("Hello there.\nWhat's your name?");
         String name = input.nextLine();
         System.out.println("Well then, hello " + name + ".\nHow old are you?");
         int age = input.nextInt();
         System.out.println("So you are " + age + " years old then.\nDo you want to know how old you will be in ten years? Yes/No");
         yesOrNo(age);
-        
     }
     public static int ageInTenYears(int age) {
         return age + 10;
